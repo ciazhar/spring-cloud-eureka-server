@@ -3,11 +3,11 @@ spring:
     name: eureka-service
 
 server:
-  port: 8761
+  port: 8001
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
     server:
-      waitTimeInMsWhenSyncEmpty: 0
+      waitTimeInMsWhenSyncEmpty: 10000
